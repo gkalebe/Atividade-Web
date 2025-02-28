@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link rel="stylesheet" href="javascript.js">
+    
+
+</head>
+<body>
+    
+    <header>
+
+        <nav class="nav">
+            <div class="container">
+                <div class="logo">
+                    <a>Equipe</a>
+                </div>
+
+                <div id="mainListDiv" class="main_list">
+                    <ul class="navlinks">
+                        <li><a href="index.html">Gabriel</a></li>
+                        <li><a href="pag2.html">Gabriela</a></li>
+                        <li><a href="pag3.html">Gustavo</a></li>
+                        <li><a href="pag4.html">Laila</a></li>
+                        <li><a href="pag5.html">Lara</a></li>
+                    </ul>
+                </div>
+                <span class="navTrigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
+            </div>
+        </nav>
+    
+        <section class="home">
+
+        </section>
+        <div style="height: 1000px">
+                <h2 class="myH2">Lara Rafaella de Oliveira Quadrado Faria</h2>
+                 <p class="myP">
+                    Olá! Meu nome é Lara Rafaella de Oliveira Quadrado Faria, sou Biomédica, tenho 30 anos. Estou cursando Ciência da computação e sou apaixonadaaaa por mangás
+                    <br><br>
+                </p>
+
+                <figure>
+                    <img class="tipos" src="img/lara.jpg" width="32%">
+                    <figcaption>(Foto: Lara)</figcaption>
+                </figure>
+                <p class="myP">
+                    Estou sempre em busca de novos desafios e oportunidades para aprender e crescer, expandindo meus conhecimentos e explorando novas possibilidades.
+                    <br><br>
+                </p>
+               
+        </div>
+        
+
+
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+    
+
+        <script>
+            $(window).scroll(function() {
+                if ($(document).scrollTop() > 50) {
+                    $('.nav').addClass('affix');
+                    console.log("OK");
+                } else {
+                    $('.nav').removeClass('affix');
+                }
+            });
+        </script>
+
+    </header>
+<br><Br><Br><br><br><Br><Br><br><Br>
+    <footer class="footer">
+        <div class="footer-content">
+            <ul class="footer-nav">
+                <li><a href="index.html">Gabriel</a></li>
+                        <li><a href="pag2.html">Gabriela</a></li>
+                        <li><a href="pag3.html">Gustavo</a></li>
+                        <li><a href="pag4.html">Laila</a></li>
+                        <li><a href="pag5.html">Lara</a></li>
+            </ul>            
+            <script>
+                feather.replace();
+            </script>
+            
+        </div>
+    </footer>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="javascript.js"></script>
+      <script>
+          $(window).scroll(function() {
+              if ($(document).scrollTop() > 50) {
+                  $('.nav').addClass('affix');
+                  console.log("OK");
+              } else {
+                  $('.nav').removeClass('affix');
+              }
+          });
+  
+          $(window).scroll(function() {
+              if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+                  $('footer').addClass('fixed-footer');
+              } else {
+                  $('footer').removeClass('fixed-footer');
+              }
+          });
+          
+      </script>
+
+<script>
+    window.addEventListener('scroll', function() {
+    var footer = document.querySelector('.footer');
+    var images = document.querySelectorAll('img');
+    var footerRect = footer.getBoundingClientRect();
+    var isOverlapping = false;
+    
+    images.forEach(function(image) {
+        var imageRect = image.getBoundingClientRect();
+        if (footerRect.bottom > imageRect.top && footerRect.top < imageRect.bottom) {
+            isOverlapping = true;
+        }
+    });
+    
+    if (isOverlapping) {
+        footer.style.backgroundColor = 'transparent';
+    } else {
+        footer.style.backgroundColor = '';
+    }
+});
+</script>
+      
+    </footer>
+</body>
+</html>
+        

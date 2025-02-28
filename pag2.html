@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link rel="stylesheet" href="javascript.js">
+
+
+</head>
+<body>
+    
+    <header>
+
+        <nav class="nav">
+            <div class="container">
+                <div class="logo">
+                    <a>Equipe</a>
+                </div>
+
+                <div id="mainListDiv" class="main_list">
+                    <ul class="navlinks">
+                        <li><a href="index.html">Gabriel</a></li>
+                        <li><a href="pag2.html">Gabriela</a></li>
+                        <li><a href="pag3.html">Gustavo</a></li>
+                        <li><a href="pag4.html">Laila</a></li>
+                        <li><a href="pag5.html">Lara</a></li>
+                    </ul>
+                </div>
+                <span class="navTrigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
+            </div>
+        </nav>
+    
+        <section class="home">
+
+        </section>
+        <div style="height: 1000px">
+                <h2 class="myH2">Gabriela Vitor Siqueira</h2>
+                 <p class="myP">
+                    Olá! Meu nome é Gabriela Vitor Siqueira, tenho 20 anos e estou no 4º semestre de Ciência da Computação. Sou apaixonada por tecnologia e programação, e estou sempre em busca de novos desafios que me permitam aprimorar minhas habilidades e expandir meu conhecimento, tanto acadêmico quanto prático.
+                </p>
+                <figure>
+                <img class="tipos" src="img/gabriela.jpg" width="20%">
+                <figcaption>(Foto: Gabriela)</figcaption>
+            </figure>
+            <p class="myP">
+                Busco constantemente me atualizar por meio de cursos, leitura especializada e no desenvolvimento de projetos pessoais desafiadores, o que me permite aplicar novas tecnologias, explorar diferentes áreas da programação e da tecnologia, e aprimorar minhas técnicas e visão sobre o universo tech.
+            </p>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+    
+
+        <script>
+            $(window).scroll(function() {
+                if ($(document).scrollTop() > 50) {
+                    $('.nav').addClass('affix');
+                    console.log("OK");
+                } else {
+                    $('.nav').removeClass('affix');
+                }
+            });
+        </script>
+ <footer class="footer">
+    <div class="footer-content">
+        <ul class="footer-nav">
+            <li><a href="index.html">Gabriel</a></li>
+                        <li><a href="pag2.html">Gabriela</a></li>
+                        <li><a href="pag3.html">Gustavo</a></li>
+                        <li><a href="pag4.html">Laila</a></li>
+                        <li><a href="pag5.html">Lara</a></li>
+        </ul>      
+        <script>
+            feather.replace();
+        </script>
+        
+    </div>
+</footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="javascript.js"></script>
+  <script>
+      $(window).scroll(function() {
+          if ($(document).scrollTop() > 50) {
+              $('.nav').addClass('affix');
+              console.log("OK");
+          } else {
+              $('.nav').removeClass('affix');
+          }
+      });
+
+      $(window).scroll(function() {
+          if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+              $('footer').addClass('fixed-footer');
+          } else {
+              $('footer').removeClass('fixed-footer');
+          }
+      });
+      
+  </script>
+
+<script>
+window.addEventListener('scroll', function() {
+    var footer = document.querySelector('.footer');
+    var images = document.querySelectorAll('img');
+    var footerRect = footer.getBoundingClientRect();
+    var isOverlapping = false;
+    
+    images.forEach(function(image) {
+        var imageRect = image.getBoundingClientRect();
+        if (footerRect.bottom > imageRect.top && footerRect.top < imageRect.bottom) {
+            isOverlapping = true;
+        }
+    });
+    
+    if (isOverlapping) {
+        footer.style.backgroundColor = 'transparent';
+    } else {
+        footer.style.backgroundColor = ''; 
+    }
+});
+</script>
+  
+    </header>
+
+
+
+
+
+
+
+</body>
+</html>
